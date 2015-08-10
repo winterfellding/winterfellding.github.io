@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://winterfellding.github.io/2015/08/10/Redis-Note-1/</loc>
+    <lastmod>2015-08-10T07:33:17.629Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://winterfellding.github.io/2015/08/04/hello-world/</loc>
     <lastmod>2015-08-04T02:43:01.861Z</lastmod>
   </url>

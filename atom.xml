@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://winterfellding.github.io//"/>
-  <updated>2015-08-04T02:43:01.861Z</updated>
+  <updated>2015-08-10T07:33:17.629Z</updated>
   <id>http://winterfellding.github.io//</id>
   
   <author>
@@ -14,6 +14,52 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[Redis Note(1)]]></title>
+    <link href="http://winterfellding.github.io/2015/08/10/Redis-Note-1/"/>
+    <id>http://winterfellding.github.io/2015/08/10/Redis-Note-1/</id>
+    <published>2015-08-10T07:10:06.000Z</published>
+    <updated>2015-08-10T07:33:17.629Z</updated>
+    <content type="html"><![CDATA[<h4 id="Installation">Installation</h4><p>Download the package from <a href="http://redis.io/download" target="_blank" rel="external">official site</a>, extract the tar package, read the README document, we can use <code>make</code> command to compile the project.</p>
+<p>After compile finished, <code>cd</code> to the <code>src</code> folder, execute the <code>./redis-server</code> to start redis server, open another terminal, <code>cd</code> to the <code>src</code> folder, and execute the <code>./redis-cli</code> command line tool to connect to redis server. </p>
+<h4 id="Common_command">Common command</h4><table>
+<thead>
+<tr>
+<th style="text-align:center">Command</th>
+<th style="text-align:center">Demo</th>
+<th style="text-align:left">Comment</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">exists</td>
+<td style="text-align:center">exists mykey</td>
+<td style="text-align:left">return 1 if exist, else 0</td>
+</tr>
+<tr>
+<td style="text-align:center">set</td>
+<td style="text-align:center">set mykey xxx</td>
+<td style="text-align:left">if exist, will overwirte</td>
+</tr>
+<tr>
+<td style="text-align:center">get</td>
+<td style="text-align:center">get mykey</td>
+<td style="text-align:left">get the key’s value</td>
+</tr>
+<tr>
+<td style="text-align:center">append</td>
+<td style="text-align:center">append mykey xxx</td>
+<td style="text-align:left">just like the keyword, <br>append the value after the <br>key’s value, if not exist,<br> append it to an empty string,<br> return the key’s value’s length</td>
+</tr>
+</tbody>
+</table>
+]]></content>
+    <summary type="html">
+    <![CDATA[<h4 id="Installation">Installation</h4><p>Download the package from <a href="http://redis.io/download" target="_blank" rel="external">offici]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Hello World]]></title>
