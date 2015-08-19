@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://winterfellding.github.io/2015/08/19/SICP-DrRacket%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
+    <lastmod>2015-08-19T07:27:54.325Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://winterfellding.github.io/2015/08/10/Redis-Note-1/</loc>
     <lastmod>2015-08-10T07:33:17.629Z</lastmod>
   </url>

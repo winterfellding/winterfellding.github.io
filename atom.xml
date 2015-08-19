@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://winterfellding.github.io//"/>
-  <updated>2015-08-10T07:33:17.629Z</updated>
+  <updated>2015-08-19T07:27:54.325Z</updated>
   <id>http://winterfellding.github.io//</id>
   
   <author>
@@ -14,6 +14,21 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[SICP DrRacket环境搭建]]></title>
+    <link href="http://winterfellding.github.io/2015/08/19/SICP-DrRacket%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/"/>
+    <id>http://winterfellding.github.io/2015/08/19/SICP-DrRacket环境搭建/</id>
+    <published>2015-08-19T07:15:26.000Z</published>
+    <updated>2015-08-19T07:27:54.325Z</updated>
+    <content type="html"><![CDATA[<p>SICP使用了Scheme语言讲解, 推荐使用的是<a href="http://www.gnu.org/software/mit-scheme/" target="_blank" rel="external">MIT-Scheme</a>, 但上手比较不容易, 我们可以使用<a href="http://www.htdp.org/" target="_blank" rel="external">How to design programs</a>中推荐的DrRacket进行一些简单的配置来进行SICP的学习。</p>
+<p>首先下载<a href="http://download.racket-lang.org/" target="_blank" rel="external">DrRacket</a>, 然后启动它，打开后界面上方是编辑栏，下方是命令行交互，把上面的<code>#lang racket</code>改成<code>#lang planet neil/sicp</code>，右下角绿色小人会开始跑动，等安装完就静止了，然后就可以方便的使用DrRacket开始SICP之旅了。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>SICP使用了Scheme语言讲解, 推荐使用的是<a href="http://www.gnu.org/software/mit-scheme/" target="_blank" rel="external">MIT-Scheme</a>, 但上手比较不容易, 我们可以使]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[Redis Note(1)]]></title>
