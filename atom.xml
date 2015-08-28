@@ -5,7 +5,7 @@
   
   <link href="/atom.xml" rel="self"/>
   <link href="http://winterfellding.github.io//"/>
-  <updated>2015-08-19T07:30:46.380Z</updated>
+  <updated>2015-08-28T06:41:41.100Z</updated>
   <id>http://winterfellding.github.io//</id>
   
   <author>
@@ -14,6 +14,23 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[java中int和Integer的互转时候的一个问题]]></title>
+    <link href="http://winterfellding.github.io/2015/08/28/java%E4%B8%ADint%E5%92%8CInteger%E7%9A%84%E4%BA%92%E8%BD%AC%E6%97%B6%E5%80%99%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/"/>
+    <id>http://winterfellding.github.io/2015/08/28/java中int和Integer的互转时候的一个问题/</id>
+    <published>2015-08-28T06:37:43.000Z</published>
+    <updated>2015-08-28T06:41:41.100Z</updated>
+    <content type="html"><![CDATA[<p>Integer是int原生类型的包装类，今天遇到一个bug，出问题的代码是这样的</p>
+<pre><code><span class="keyword">int</span> <span class="keyword">id</span> = obj<span class="variable">.getId</span>(); <span class="comment">// getId()获取的是Integer对象</span>
+</code></pre><p>当obj.getId()是null的时候，得到的id不会是0，而会抛出NullPointerException，看完详细的报错信息，会发现后者调用了<code>Integer#intValue</code>这一方法，所以当是null的时候，便会发生NullPointerException，我们要么注意两边属性都使用Integer/int, 要么在取的时候判定一下是否为null.</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>Integer是int原生类型的包装类，今天遇到一个bug，出问题的代码是这样的</p>
+<pre><code><span class="keyword">int</span> <span class="keyword">id</span> = obj<span class]]>
+    </summary>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[SICP DrRacket环境搭建]]></title>

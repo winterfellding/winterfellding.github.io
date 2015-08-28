@@ -3,17 +3,24 @@
 <head>
   <meta charset="utf-8">
   
-  <title>Archives: 2015 | winterfall</title>
+  <title>java中int和Integer的互转时候的一个问题 | winterfall</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description">
-<meta property="og:type" content="website">
-<meta property="og:title" content="winterfall">
-<meta property="og:url" content="http://winterfellding.github.io/archives/2015/index.html">
+  <meta name="description" content="Integer是int原生类型的包装类，今天遇到一个bug，出问题的代码是这样的
+int id = obj.getId(); // getId()获取的是Integer对象
+当obj.getId()是null的时候，得到的id不会是0，而会抛出NullPointerException，看完详细的报错信息，会发现后者调用了Integer#intValue这一方法，所以当是null的时候，便会发生Nu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="java中int和Integer的互转时候的一个问题">
+<meta property="og:url" content="http://winterfellding.github.io/2015/08/28/java中int和Integer的互转时候的一个问题/index.html">
 <meta property="og:site_name" content="winterfall">
-<meta property="og:description">
+<meta property="og:description" content="Integer是int原生类型的包装类，今天遇到一个bug，出问题的代码是这样的
+int id = obj.getId(); // getId()获取的是Integer对象
+当obj.getId()是null的时候，得到的id不会是0，而会抛出NullPointerException，看完详细的报错信息，会发现后者调用了Integer#intValue这一方法，所以当是null的时候，便会发生Nu">
+<meta property="og:updated_time" content="2015-08-28T06:41:41.100Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="winterfall">
-<meta name="twitter:description">
+<meta name="twitter:title" content="java中int和Integer的互转时候的一个问题">
+<meta name="twitter:description" content="Integer是int原生类型的包装类，今天遇到一个bug，出问题的代码是这样的
+int id = obj.getId(); // getId()获取的是Integer对象
+当obj.getId()是null的时候，得到的id不会是0，而会抛出NullPointerException，看完详细的报错信息，会发现后者调用了Integer#intValue这一方法，所以当是null的时候，便会发生Nu">
   
     <link rel="alternative" href="/atom.xml" title="winterfall" type="application/atom+xml">
   
@@ -59,96 +66,55 @@
   </div>
 </header>
       <div class="outer">
-        <section id="main">
-  
-  
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2015" class="archive-year">2015</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/08/28/java中int和Integer的互转时候的一个问题/" class="archive-article-date">
-  <time datetime="2015-08-28T06:37:43.000Z" itemprop="datePublished">Aug 28</time>
+        <section id="main"><article id="post-java中int和Integer的互转时候的一个问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/28/java中int和Integer的互转时候的一个问题/" class="article-date">
+  <time datetime="2015-08-28T06:37:43.000Z" itemprop="datePublished">2015-08-28</time>
 </a>
-      
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/28/java中int和Integer的互转时候的一个问题/">java中int和Integer的互转时候的一个问题</a>
+    <h1 class="article-title" itemprop="name">
+      java中int和Integer的互转时候的一个问题
     </h1>
   
 
-    </header>
-  </div>
-</article>
-  
+      </header>
     
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/08/19/SICP-DrRacket环境搭建/" class="archive-article-date">
-  <time datetime="2015-08-19T07:15:26.000Z" itemprop="datePublished">Aug 19</time>
-</a>
+    <div class="article-entry" itemprop="articleBody">
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/19/SICP-DrRacket环境搭建/">SICP DrRacket环境搭建</a>
-    </h1>
-  
+        <p>Integer是int原生类型的包装类，今天遇到一个bug，出问题的代码是这样的</p>
+<pre><code><span class="keyword">int</span> <span class="keyword">id</span> = obj<span class="variable">.getId</span>(); <span class="comment">// getId()获取的是Integer对象</span>
+</code></pre><p>当obj.getId()是null的时候，得到的id不会是0，而会抛出NullPointerException，看完详细的报错信息，会发现后者调用了<code>Integer#intValue</code>这一方法，所以当是null的时候，便会发生NullPointerException，我们要么注意两边属性都使用Integer/int, 要么在取的时候判定一下是否为null.</p>
 
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/08/10/Redis-Note-1/" class="archive-article-date">
-  <time datetime="2015-08-10T07:10:06.000Z" itemprop="datePublished">Aug 10</time>
-</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/10/Redis-Note-1/">Redis Note(1)</a>
-    </h1>
-  
-
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      <a href="/2015/08/04/hello-world/" class="archive-article-date">
-  <time datetime="2015-08-04T02:43:01.861Z" itemprop="datePublished">Aug 4</time>
-</a>
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://winterfellding.github.io/2015/08/28/java中int和Integer的互转时候的一个问题/" data-id="cidv9ufpv0001wom0tk4lkd7v" class="article-share-link">Share</a>
       
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2015/08/04/hello-world/">Hello World</a>
-    </h1>
-  
-
-    </header>
+      
+    </footer>
   </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2015/08/19/SICP-DrRacket环境搭建/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">SICP DrRacket环境搭建</div>
+    </a>
+  
+</nav>
+
+  
 </article>
-  
-  
-    </div></section>
-  
+
 </section>
         
           <aside id="sidebar">

@@ -61,6 +61,45 @@
       <div class="outer">
         <section id="main">
   
+    <article id="post-java中int和Integer的互转时候的一个问题" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2015/08/28/java中int和Integer的互转时候的一个问题/" class="article-date">
+  <time datetime="2015-08-28T06:37:43.000Z" itemprop="datePublished">2015-08-28</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2015/08/28/java中int和Integer的互转时候的一个问题/">java中int和Integer的互转时候的一个问题</a>
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Integer是int原生类型的包装类，今天遇到一个bug，出问题的代码是这样的</p>
+<pre><code><span class="keyword">int</span> <span class="keyword">id</span> = obj<span class="variable">.getId</span>(); <span class="comment">// getId()获取的是Integer对象</span>
+</code></pre><p>当obj.getId()是null的时候，得到的id不会是0，而会抛出NullPointerException，看完详细的报错信息，会发现后者调用了<code>Integer#intValue</code>这一方法，所以当是null的时候，便会发生NullPointerException，我们要么注意两边属性都使用Integer/int, 要么在取的时候判定一下是否为null.</p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://winterfellding.github.io/2015/08/28/java中int和Integer的互转时候的一个问题/" data-id="cidv9ufpv0001wom0tk4lkd7v" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+  
     <article id="post-SICP-DrRacket环境搭建" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-meta">
     <a href="/2015/08/19/SICP-DrRacket环境搭建/" class="article-date">
@@ -89,7 +128,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://winterfellding.github.io/2015/08/19/SICP-DrRacket环境搭建/" data-id="cidigiy47000040m0vlqbd5b7" class="article-share-link">Share</a>
+      <a data-url="http://winterfellding.github.io/2015/08/19/SICP-DrRacket环境搭建/" data-id="cidv9ufta0003wom02kxpfxbe" class="article-share-link">Share</a>
       
       
     </footer>
@@ -158,7 +197,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://winterfellding.github.io/2015/08/10/Redis-Note-1/" data-id="cidigcm1k00001wm0v0k44wra" class="article-share-link">Share</a>
+      <a data-url="http://winterfellding.github.io/2015/08/10/Redis-Note-1/" data-id="cidv9ufov0000wom0xhay706s" class="article-share-link">Share</a>
       
       
     </footer>
@@ -203,7 +242,7 @@
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://winterfellding.github.io/2015/08/04/hello-world/" data-id="cidigcm2o00011wm0d8p934qv" class="article-share-link">Share</a>
+      <a data-url="http://winterfellding.github.io/2015/08/04/hello-world/" data-id="cidv9ufsw0002wom06ignw5s4" class="article-share-link">Share</a>
       
       
     </footer>
@@ -228,7 +267,7 @@
   <div class="widget-wrap">
     <h3 class="widget-title">Archives</h3>
     <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2015/08/">August 2015</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -238,6 +277,10 @@
     <h3 class="widget-title">Recents</h3>
     <div class="widget">
       <ul>
+        
+          <li>
+            <a href="/2015/08/28/java中int和Integer的互转时候的一个问题/">java中int和Integer的互转时候的一个问题</a>
+          </li>
         
           <li>
             <a href="/2015/08/19/SICP-DrRacket环境搭建/">SICP DrRacket环境搭建</a>

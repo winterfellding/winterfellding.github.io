@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://winterfellding.github.io/2015/08/28/java%E4%B8%ADint%E5%92%8CInteger%E7%9A%84%E4%BA%92%E8%BD%AC%E6%97%B6%E5%80%99%E7%9A%84%E4%B8%80%E4%B8%AA%E9%97%AE%E9%A2%98/</loc>
+    <lastmod>2015-08-28T06:41:41.100Z</lastmod>
+  </url>
+  
+  <url>
     <loc>http://winterfellding.github.io/2015/08/19/SICP-DrRacket%E7%8E%AF%E5%A2%83%E6%90%AD%E5%BB%BA/</loc>
     <lastmod>2015-08-19T07:30:46.380Z</lastmod>
   </url>
